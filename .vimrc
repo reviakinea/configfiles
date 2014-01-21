@@ -191,3 +191,12 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Read local settings (fonts, colors, ...)
+"""""""""""""""""""""""""""""""""""""""""""""""""
+let s:localrc = expand($HOME . '/.vimrc_local')
+if filereadable(s:localrc)
+    exec ':source' . s:localrc
+endif
+
