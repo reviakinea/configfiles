@@ -98,6 +98,7 @@ set showmatch
 
 if has("gui_running")
     set guioptions+=c
+    set guioptions-=m
     set guioptions-=T
     set guioptions-=r
     set guioptions-=R
